@@ -6,3 +6,5 @@ set showcmd
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+" Associate Drupal files with php syntax
+au BufNewFile,BufRead *.module setf php
