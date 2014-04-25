@@ -1,1 +1,1 @@
-My personal vimrc file
+My personal vimrc setup
