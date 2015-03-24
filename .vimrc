@@ -25,6 +25,9 @@ au BufNewFile,BufRead *.module setf php
 " Open NerdTree. 'e' for Explore!
 :nmap \e :NERDTreeToggle<CR>
 
+" Removes all trailing whitespace
+:nmap \whitespace :%s/\s\+$//<CR>
+
 " Recognize 256 color support
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
   set t_Co=256
