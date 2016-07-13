@@ -6,7 +6,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-" set line numbers to relative
+" set line numbers to hybrid by enabling both
+set number
 set relativenumber
 
 " Associate Drupal files with php syntax
