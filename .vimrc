@@ -6,6 +6,9 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" set line numbers to relative
+set relativenumber
+
 " Associate Drupal files with php syntax
 au BufNewFile,BufRead *.module setf php
 
