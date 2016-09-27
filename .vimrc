@@ -1,3 +1,10 @@
+" if my pricery folder exists, set the runtime path 
+" so this works from root
+if isdirectory("/home/pricery/.vim")
+  set runtimepath=/home/pricery/.vim,$VIMRUNTIME
+  set nocompatible
+endif 
+
 " enable pathogen
 execute pathogen#infect()
 
