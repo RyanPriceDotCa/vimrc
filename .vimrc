@@ -10,8 +10,8 @@ execute pathogen#infect()
 
 " set indents to two spaces
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " set line numbers to hybrid by enabling both
 set number
