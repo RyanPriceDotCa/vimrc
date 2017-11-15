@@ -1,10 +1,17 @@
+" if my pricery folder exists, set the runtime path 
+" so this works from root
+if isdirectory("/home/pricery/.vim")
+  set runtimepath=/home/pricery/.vim,$VIMRUNTIME
+  set nocompatible
+endif 
+
 " enable pathogen
 execute pathogen#infect()
 
 " set indents to two spaces
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 " set line numbers to hybrid by enabling both
 set number
@@ -37,6 +44,7 @@ if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gno
   set t_Co=256
 endif
 
-" Set the default color scheme
-:colorscheme desert
-
+" Set the default color scheme, except for JSON files
+" because we want to use vim-json for that
+autocmd BufEnter * :colorscheme desert
+autocmd BufEnter *.json :colorscheme default
