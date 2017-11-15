@@ -22,3 +22,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = https://github.com/evidens/vim-twig
+[submodule "bundle/vim-polyglot"]
+	path = bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
